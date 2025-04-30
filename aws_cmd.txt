@@ -11,3 +11,17 @@ git clone https://github.com/MdKaif-0007/kaif54_repo.git
 cd kaif54_repo
 npm install
 node index.js
+
+
+
+hosting web using ec2
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+cd ..
+pwd
+cd /var/www/html
+ls
+cd ..
+sudo chmod 777 html
