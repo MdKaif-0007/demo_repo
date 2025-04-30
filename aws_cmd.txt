@@ -1,3 +1,4 @@
+Deploy a project from GitHub to EC2 by creating a new security group and user data.
 #!/bin/bash 
 apt-get update 
 apt-get upgrade 
@@ -14,8 +15,7 @@ node index.js
 
 
 
-hosting web using ec2
-
+hosting web using ec2.
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install nginx
@@ -25,3 +25,25 @@ cd /var/www/html
 ls
 cd ..
 sudo chmod 777 html
+
+Deploy a project from a local machine to GitHub and vise versa.
+git init
+git add .
+git status
+git config --global user.email <user email address>
+git config --global user.name <username>
+git commit -m “<message>”
+git remote add origin
+git push -u origin master
+
+Deploy a project from GitHub to EC2.
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install nginx
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash –
+sudo apt install nodejs
+git clone <Github repo link>
+cd <Github repo name>
+npm install
+node index.js
+
