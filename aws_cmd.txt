@@ -47,3 +47,13 @@ cd <Github repo name>
 npm install
 node index.js
 
+
+Create a new file using “nano” command and write the following block of code,
+nano a
+#!/bin/bash
+while true
+do
+        echo "Looping"
+done
+chmod 777 a
+./a
